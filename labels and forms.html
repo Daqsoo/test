@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1> Наборы полей</h1>
+
+<form>
+	<legend>ПЕРСОНАЛЬНЫЕ ДАННЫЕ:</legend>
+        <fieldset form="user_regn" name="user_details">
+        <label for="fname">Имя:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Фамилия:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>	
+	<label for ="mycolor">Цвет:</label>
+	<input type="color" id="mycolor" name="mycolor"><br><br>
+	<label for ="numbers">Возраст:</label>
+	<input type="number" min="1" max="100" id="numbers" name="numbers"><br><br>
+	<label for ="range">Range:</label>
+	<input type="Range" min="1" max="10" id="range" name="range"><br><br>
+	<label for ="search">Поиск:</label>
+	<input type="search" id="search" name="search"><br><br>
+	<label for ="mobile">Номер:</label>
+	<input type="tel" placeholder="8-999-999-99-99" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" id="mobile" name="mobile"><br><br>
+	<label for="list">Список:</label>
+        <input type="text" list="list">
+	<datalist id="list">
+	<option value="1"></option>
+	<option value="privet"></option>
+	<option value="poka"></option> <!-- Коммент -->
+	</datalist><br><br>
+    </fieldset>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
